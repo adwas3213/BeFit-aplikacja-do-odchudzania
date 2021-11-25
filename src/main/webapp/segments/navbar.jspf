@@ -1,0 +1,34 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Adam
+  Date: 23.11.2021
+  Time: 09:39
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<link rel="stylesheet" href="styles3.css">
+<nav>
+    <div class="navBar">
+
+        <aside class="categories">
+            <ul>
+                <!--Tutaj należy zmienić ścieżkę dostepu do naszej strony na odpowiednie serwlety-->
+                <li>
+                    <a href="index.html"><img src="logo.png" alt="logo"></a>
+                </li>
+                <li><a href="#">Lista siłowni</a></li>
+                <li><a href="#">Sprawdź zapotrzebowanie</a></li>
+                <li><a href="#">Sprawdź kaloryczność posiłków</a></li>
+                <li><a href="${pageContext.request.contextPath}/kalkulatorAktywnosci">Przelicz kalorie na Aktywność</a></li>
+                <li><a href="#">Często zadawane pytania</a></li>
+                <li><a href="#">O nas</a></li>
+            </ul>
+        </aside>
+    </div>
+    <!--Tutaj należy zmienić ścieżkę dostepu do naszej strony na odpowiednie serwlety-->
+    <div class="logInOrRegister">
+        <a href="#">Zaloguj</a>
+        <a href="#">Zarejestruj sie</a>
+    </div>
+
+</nav>
