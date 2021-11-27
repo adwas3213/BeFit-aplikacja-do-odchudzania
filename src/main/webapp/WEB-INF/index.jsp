@@ -1,124 +1,96 @@
 <%--
   Created by IntelliJ IDEA.
   User: Adam
-  Date: 26.11.2021
-  Time: 20:56
+  Date: 27.11.2021
+  Time: 13:21
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html5>
+<html lang="pl">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>BeFit - twoja aplikacja do odchudzania</title>
+  <meta charset="utf-8">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesToDemandCalory.css">
-    <title>Hello, world!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/cssFiles/styles3.css">
 </head>
 
-<body>
-
-
+<body >
 <jsp:include page="/WEB-INF/navbar.jspf"/>
 
-<div class="form-body">
-    <div class="row">
-        <div class="form-holder">
-            <div class="form-content">
-                <div class="form-items">
-                    <h3>Kalkulator Zapotrzebowania i BMI</h3>
-                    <p>Zaraz dowiesz się jakie masz BMI i zapotrzebowanie kaloryczne</p>
-                    <form class="requires-validation" novalidate>
+<style>
+  .present-items {
+    display: inline-flex;
+  }
+</style>
+<h1 class="visually-hidden">Heroes examples</h1>
 
-                        <div class="col-md-12">
-                            <input class="form-control" type="number" name="weight" placeholder="Twoja waga" required>
-                            <div class="valid-feedback">Waga wprowadzona prawidłowo</div>
-                            <div class="invalid-feedback">Musisz podać wagę</div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <input class="form-control" type="number" name="height" placeholder="Twój wzrost" required>
-                            <div class="valid-feedback">Wzrost wprowadzony prawidłowo</div>
-                            <div class="invalid-feedback">Musisz podać wzrost</div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <select class="form-select mt-3" required>
-                                <option selected disabled value="">Intensywność aktywności podczas dnia</option>
-                                <option value="low">Niska</option>
-                                <option value="medium">Średnia</option>
-                                <option value="high">Wysoka</option>
-                            </select>
-                            <div class="valid-feedback">Dziękuje za podanie intensywności aktywności w trakcie dnia</div>
-                            <div class="invalid-feedback">Proszę podać aktywność !</div>
-                        </div>
-
-
-
-                        <div class="col-md-12 mt-3">
-                            <label class="mb-3 mr-1" for="gender">Płeć</label>
-
-                            <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
-                            <label class="btn btn-sm btn-outline-secondary" for="male">Mężczyzna</label>
-
-                            <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
-                            <label class="btn btn-sm btn-outline-secondary" for="female">Kobieta</label>
-
-
-                            <div class="valid-feedback mv-up">Musisz wybrać płeć</div>
-                            <div class="invalid-feedback mv-up">Proszę podaj płeć</div>
-                        </div>
-
-                        <div class="form-button mt-3">
-                            <button id="submit" type="submit" class="btn btn-primary">Wylicz</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+<div class="px-4 py-5 my-5 text-center">
+  <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+  <h1 class="display-5 fw-bold">Centered hero</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript
+      plugins.
+    </p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
     </div>
+  </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body text-center">
-                    <h5 class="card-title m-b-0">Co to jest BMI ?</h5>
-                </div>
-                <p>OPIS BMI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<h2 style="text-align: center; border: solid; background-color: black; color: whitesmoke;">
+  Poznaj nasze produkty
+</h2>
+<div class="present-items">
+  <!--Prezentacja naszych produktów-->
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
 
-
-
-
-                <p> HIDDEN Twoje BMI wynosi $$$ </p>
-
-
-
-                <div class="card-body text-center">
-                    <h5 class="card-title m-b-0">Co to jest zapotrzebowanie kaloryczne ? </h5>
-                </div>
-
-                <p>OPIS ZAPOTRZEBOWANIA KALORYCZNEGO !!!!!!!!!!!!!!!!!</p>
-                <p> HIDDEN Twoje zapotrzebowanie kaloryczne wynosi $$$</p>
-
-            </div>
-        </div>
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+
 </div>
+
 
 <jsp:include page="/WEB-INF/footer.jspf"/>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="script.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>

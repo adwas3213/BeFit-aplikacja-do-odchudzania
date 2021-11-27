@@ -11,7 +11,7 @@ public class CalloryDemandControler extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        request.getRequestDispatcher("WEB-INF/index.jsp").forward(request,response);
+        request.getRequestDispatcher("WEB-INF/BMICalculator.jsp").forward(request,response);
 
     }
 

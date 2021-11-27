@@ -6,11 +6,12 @@ import jakarta.servlet.annotation.*;
 
 import java.io.IOException;
 
-@WebServlet("/cos")
+@WebServlet({"","/"})
 public class LandingPageController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//Potem dodać request dispatchera
+
+        request.getRequestDispatcher("WEB-INF/index.jsp").forward(request,response);
     }
 
     @Override
