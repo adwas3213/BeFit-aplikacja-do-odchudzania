@@ -16,15 +16,15 @@ public class CaloriesCalculatorControler extends HttpServlet {
         int calory=Integer.parseInt(request.getParameter("kalorie"));
         request.setAttribute("aktywnosci",new Activities(calory));
         request.setAttribute("kalorie",calory);
-        request.getRequestDispatcher("CaloriesToActivity.jsp").forward(request,response);
+        request.getRequestDispatcher("WEB-INF/CaloriesToActivity.jsp").forward(request,response);
     } else{
-        request.getRequestDispatcher("/CaloriesToActivity.jsp").forward(request,response);
+        request.getRequestDispatcher("WEB-INF/CaloriesToActivity.jsp").forward(request,response);
     }
 
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/webapp/CaloriesToActivity.jsp").forward(request,response);
+        request.getRequestDispatcher("WEB-INF/CaloriesToActivity.jsp").forward(request,response);
     }
 }

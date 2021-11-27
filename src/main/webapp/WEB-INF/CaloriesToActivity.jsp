@@ -14,11 +14,11 @@
     <title>Przelicz Kalorie na aktywność</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
-    <link rel="stylesheet" href="activityFile.css">
+    <link rel="stylesheet" href="../activityFile.css">
 </head>
 
 <body>
-<jsp:include page="segments/navbar.jspf"/>
+<jsp:include page="/WEB-INF/navbar.jspf"/>
 
 <div class="container col-xl-10 col-xxl-8 px-4 py-5">
     <div class="row align-items-center g-lg-5 py-5">
@@ -84,7 +84,7 @@
 
 
 
-<jsp:include page="segments/footer.jspf"/>
+<jsp:include page="/WEB-INF/footer.jspf"/>
 </body>
 
 </html>

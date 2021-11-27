@@ -5,6 +5,7 @@
          version="5.0">
          <servlet>
         <servlet-name>jsp</servlet-name>
+
     </servlet>
 
     <servlet-mapping>
@@ -12,4 +13,5 @@
         <url-pattern>*.jsp</url-pattern>
         <url-pattern>*.jspf</url-pattern>
     </servlet-mapping>
+
 </web-app>
