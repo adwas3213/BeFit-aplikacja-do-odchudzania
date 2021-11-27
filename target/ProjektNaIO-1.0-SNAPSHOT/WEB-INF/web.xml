@@ -5,7 +5,6 @@
          version="5.0">
          <servlet>
         <servlet-name>jsp</servlet-name>
-
     </servlet>
 
     <servlet-mapping>

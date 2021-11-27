@@ -12,7 +12,6 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
-
 .navButton {
     background-color: yellowgreen;
 }
@@ -26,18 +25,6 @@ nav>div>a {
     min-width: fit-content;
     width: 70%;
 }
-
-
-/* .logInOrRegister {
-    display: inline-table;
-    min-width: fit-content;
-   
-} */
-
-
-/*
-*/
-
 .categories>ul {
     list-style: none;
     margin: 0;

@@ -1,0 +1,94 @@
+nav {
+    display: flex;
+    background-color: cornflowerblue;
+    min-height: min-content;
+    max-height: fit-content;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    align-items: center;
+    justify-content: space-between;
+}
+.navButton {
+    background-color: yellowgreen;
+}
+
+nav>div>a {
+    text-decoration: none;
+}
+
+.navBar {
+    display: inline-table;
+    min-width: fit-content;
+    width: 70%;
+}
+.categories>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.categories>ul>li {
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-weight: 500;
+    border: 2px solid;
+    color: white;
+    opacity: 0.8;
+}
+
+.categories>ul>li>a {
+    color: inherit;
+    display: block;
+    text-align: center;
+}
+
+
+/* kolor kafelków */
+
+.categories>ul>li:nth-child(3n) {
+    background-color: green;
+}
+
+.categories>ul>li:nth-child(3n+1) {
+    background-color: black;
+}
+
+.categories>ul>li:nth-child(3n+2) {
+    background-color: orange;
+}
+
+.categories>ul>li:hover {
+    background-color: darkblue;
+}
+
+.logInOrRegister {
+    background-color: white;
+    text-transform: uppercase;
+    border-width: 3px;
+    border-style: solid;
+    width: 15%;
+    display: flex;
+}
+
+.logInOrRegister>a {
+    background-color: blue;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    justify-content: space-evenly;
+    border: 2px solid;
+    color: white;
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-weight: 500;
+}
+
+.logInOrRegister>a:hover {
+    opacity: 70%;
+}
