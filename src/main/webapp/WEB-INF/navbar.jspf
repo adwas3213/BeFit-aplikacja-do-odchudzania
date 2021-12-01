@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<link rel="stylesheet" href="../staticContent/cssFiles/styles3.css">
+
 <nav>
     <div class="navBar">
 

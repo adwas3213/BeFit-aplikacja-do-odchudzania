@@ -15,6 +15,11 @@ public class CaloryDemandControler extends HttpServlet {
         {
 
             CaloryDemandDTO caloryDemandDTO= new CaloryDemandDTO(request);
+            BMIDTO bmidto=  CaloryDemandService.calculateBMI(caloryDemandDTO);
+
+            request.setAttribute("BMI",bmidto);
+            CaloryDemandWithDescriptionDTO caloryDemandWithDescriptionDTO= CaloryDemandService.calculateCaloryDemand(caloryDemandDTO);
+            request.setAttribute("Demand",caloryDemandWithDescriptionDTO);
 
         }
 

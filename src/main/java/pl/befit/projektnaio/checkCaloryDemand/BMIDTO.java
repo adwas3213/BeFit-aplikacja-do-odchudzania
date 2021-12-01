@@ -16,4 +16,12 @@ public class BMIDTO {
     public String getColor() {
         return color;
     }
+
+    @Override
+    public String toString() {
+        return "BMIDTO{" +
+                "bmi=" + bmi +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }

@@ -38,17 +38,21 @@
                     <form class="requires-validation" novalidate>
 
                         <div class="col-md-12">
-                            <input class="form-control" type="number" name="weight" placeholder="Twoja waga w cm" required>
+                            <input class="form-control" type="number" step="0.1" name="weight" placeholder="Twoja waga w kilogramach" required>
                             <div class="valid-feedback">Waga wprowadzona prawidłowo</div>
                             <div class="invalid-feedback">Musisz podać wagę</div>
                         </div>
 
                         <div class="col-md-12">
-                            <input class="form-control" type="number" name="height" placeholder="Twój wzrost" required>
+                            <input class="form-control" type="number" step="1" name="height" placeholder="Twój wzrost w centymetrach" required>
                             <div class="valid-feedback">Wzrost wprowadzony prawidłowo</div>
                             <div class="invalid-feedback">Musisz podać wzrost</div>
                         </div>
-
+                        <div class="col-md-12">
+                            <input class="form-control" type="number" step="1" name="age" placeholder="Twój wiek w latach" required>
+                            <div class="valid-feedback">Wiek wprowadzony prawidłowo</div>
+                            <div class="invalid-feedback">Musisz podać wiek</div>
+                        </div>
                         <div class="col-md-12">
                             <select class="form-select mt-3" name="activityLevel" required>
                                 <option selected disabled value="">Intensywność aktywności podczas dnia</option>
@@ -93,12 +97,23 @@
                 <div class="card-body text-center">
                     <h5 class="card-title m-b-0">Co to jest BMI ?</h5>
                 </div>
-                <p>OPIS BMI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+                <p class="p-3">BMI to wskaźnik masy ciała. Skrót wziął się od angielskiej wersji, a mianowicie body mass index.
+                    Jego podstawą jest wzór, w którym bierze się masę i wzrost ciała, ale często też płeć czy wiek.
+                    Jednak to te dwa pierwsze parametry są zawsze niezbędne do wyliczenia swojego BMI.</p>
 
 
 
 
-                <p> HIDDEN Twoje BMI wynosi $$$ </p>
+                <div class ="container" style="color: ${requestScope.BMI.color}">
+                    <p> Twoje BMI wynosi ${requestScope.BMI.bmi} <c:if test="${requestScope.BMI.bmi>=40}"> lub więcej co świadczy o skrajnej otyłości </c:if>  </p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar"
+                             style="background-color: ${requestScope.BMI.color}; width: ${100*requestScope.BMI.bmi/40}%; " aria-valuenow="${requestScope.BMI.bmi}" aria-valuemin="0" aria-valuemax="40">${100*requestScope.BMI.bmi/40}%</div>
+                    </div>
+
+                </div>
+
+
 
 
 
@@ -106,8 +121,14 @@
                     <h5 class="card-title m-b-0">Co to jest zapotrzebowanie kaloryczne ? </h5>
                 </div>
 
-                <p>OPIS ZAPOTRZEBOWANIA KALORYCZNEGO !!!!!!!!!!!!!!!!!</p>
-                <p> HIDDEN Twoje zapotrzebowanie kaloryczne wynosi $$$</p>
+                <p>Zapotrzebowanie kaloryczne określa Ilość kalorii, które muszą być dostarczone do organizmu, aby mógł on normalnie funkcjonować oraz by zachować prawidłową wagę ciała.
+                    Za jednostkę przyjmuje się kalorie (kcal). Co ważne, zapotrzebowanie kaloryczne u każdego jest inne.
+                    Uzależnione jest ono od: wieku, płci, wagi, trybu życia, oraz aktywności fizycznej.</p>
+               <c:if test="${requestScope.Demand.caloryDemand!=null }">
+                   <p> Twoje zapotrzebowanie kaloryczne wynosi <strong>${requestScope.Demand.caloryDemand}</strong> </p>
+               </c:if>
+                <p>Jest ono uzależnione od twoich personalnych danych bazując na potencjalnym twoim opisie </p>
+                <p>${requestScope.Demand.description}</p>
 
             </div>
         </div>
