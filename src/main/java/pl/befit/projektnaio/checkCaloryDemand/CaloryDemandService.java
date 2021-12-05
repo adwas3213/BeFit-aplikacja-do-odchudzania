@@ -16,13 +16,13 @@ public class CaloryDemandService {
             color="red";
         }else if(bmi<18.50)
         {
-            color="#FFD700";
+            color="orange";
         } else if(bmi<25)
         {
             color="green";
         }else if(bmi<30)
         {
-            color="#FFD700";
+            color="orange";
         } else
         {
             color="red";
@@ -47,8 +47,15 @@ public class CaloryDemandService {
         }
         description
                 .append("Jako że jesteś ")
-                .append(caloryDemandDTO.getGender().getName())
-                .append(" mającym ")
+                .append(caloryDemandDTO.getGender().getName());
+                if(caloryDemandDTO.getGender()==Gender.MALE)
+                {
+                    description.append(" mającym ");
+                } else
+                {
+                    description.append(" mającą ");
+                }
+                description
                 .append(caloryDemandDTO.getAge())
 
                 .append(" lat oraz twój wzrost to ")
@@ -71,6 +78,6 @@ public class CaloryDemandService {
         }
 
         return new CaloryDemandWithDescriptionDTO(description.toString(),Math.round(caloryDemand));
-        //TODO Kalkulator zapotrzebowania kalorycznego
+
     }
 }

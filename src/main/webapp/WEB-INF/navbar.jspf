@@ -3,14 +3,13 @@
 
 <nav>
     <div class="navBar">
-
         <aside class="categories">
             <ul>
                 <!--Tutaj należy zmienić ścieżkę dostepu do naszej strony na odpowiednie serwlety-->
                 <li>
                     <a href="${pageContext.request.contextPath}/"><img src="logo.png" alt="logo"></a>
                 </li>
-                <li><a href="#">Lista siłowni</a></li>
+                <li><a href="${pageContext.request.contextPath}/silownie">Lista siłowni</a></li>
                 <li><a href="${pageContext.request.contextPath}/kalkulatorBMI">Sprawdź zapotrzebowanie</a></li>
                 <li><a href="#">Sprawdź kaloryczność posiłków</a></li>
                 <li><a href="${pageContext.request.contextPath}/kalkulatorAktywnosci">Przelicz kalorie na Aktywność</a></li>

@@ -17,6 +17,7 @@ public class CaloriesCalculatorControler extends HttpServlet {
         request.setAttribute("aktywnosci",new Activities(calory));
         request.setAttribute("kalorie",calory);
         request.getRequestDispatcher("WEB-INF/CaloriesToActivity.jsp").forward(request,response);
+
     } else{
         request.getRequestDispatcher("WEB-INF/CaloriesToActivity.jsp").forward(request,response);
     }

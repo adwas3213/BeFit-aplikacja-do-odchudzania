@@ -23,7 +23,7 @@
     <title>Hello, world!</title>
 </head>
 
-<body>
+<body style="overflow-x: hidden">
 
 
 <jsp:include page="/WEB-INF/navbar.jspf"/>
@@ -38,18 +38,18 @@
                     <form class="requires-validation" novalidate>
 
                         <div class="col-md-12">
-                            <input class="form-control" type="number" step="0.1" name="weight" placeholder="Twoja waga w kilogramach" required>
+                            <input class="form-control" type="number" step="0.1" min="20" max="450" name="weight" placeholder="Twoja waga w kilogramach" required>
                             <div class="valid-feedback">Waga wprowadzona prawidłowo</div>
                             <div class="invalid-feedback">Musisz podać wagę</div>
                         </div>
 
                         <div class="col-md-12">
-                            <input class="form-control" type="number" step="1" name="height" placeholder="Twój wzrost w centymetrach" required>
+                            <input class="form-control" type="number" step="1" name="height" min="70" max="250" placeholder="Twój wzrost w centymetrach" required>
                             <div class="valid-feedback">Wzrost wprowadzony prawidłowo</div>
                             <div class="invalid-feedback">Musisz podać wzrost</div>
                         </div>
                         <div class="col-md-12">
-                            <input class="form-control" type="number" step="1" name="age" placeholder="Twój wiek w latach" required>
+                            <input class="form-control" type="number" step="1" name="age" min="5" max="123" placeholder="Twój wiek w latach" required>
                             <div class="valid-feedback">Wiek wprowadzony prawidłowo</div>
                             <div class="invalid-feedback">Musisz podać wiek</div>
                         </div>
