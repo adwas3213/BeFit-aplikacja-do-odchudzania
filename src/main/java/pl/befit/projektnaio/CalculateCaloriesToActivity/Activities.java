@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class Activities {
-///Tutaj będzie podana liczba minut oraz godzin potrzebnych na spalenie danej ilości kalorii
+
 
 
 

@@ -11,10 +11,13 @@ public class ActivitiesRepository {
 
         this.description = description;
        this.minutes=calories/converter;
-
+       minutes*=10;
        minutes=Math.round(minutes);
+       minutes/=10;
         this.hours= minutes/60;
+        hours*=100;
        hours=Math.round(hours);
+       hours/=100;
 
 
 

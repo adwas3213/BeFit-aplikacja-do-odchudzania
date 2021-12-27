@@ -12,5 +12,7 @@
         <url-pattern>*.jsp</url-pattern>
         <url-pattern>*.jspf</url-pattern>
     </servlet-mapping>
-
+    <error-page>
+        <location>/WTF</location>
+    </error-page>
 </web-app>

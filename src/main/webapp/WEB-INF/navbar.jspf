@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <nav>
     <div class="navBar">
@@ -19,9 +19,21 @@
         </aside>
     </div>
     <!--Tutaj należy zmienić ścieżkę dostepu do naszej strony na odpowiednie serwlety-->
-    <div class="logInOrRegister">
-        <a href="#">Zaloguj</a>
-        <a href="#">Zarejestruj sie</a>
-    </div>
+<c:choose>
+    <c:when test="${sessionScope.isLogged==null}">
 
+        <div class="logInOrRegister">
+            <a href="${pageContext.request.contextPath}/login">Zaloguj</a>
+            <a href="${pageContext.request.contextPath}/register">Zarejestruj sie</a>
+        </div>
+    </c:when>
+
+        <c:otherwise>
+            <div class="logInOrRegister">
+            <a href="${pageContext.request.contextPath}/logout">Wyloguj się </a>
+            <a href="${pageContext.request.contextPath}/profil">Profil</a>
+            </div>
+    </c:otherwise>
+
+</c:choose>
 </nav>

@@ -9,6 +9,7 @@ public class BMIDTO {
         this.color = color;
     }
 
+
     public double getBmi() {
         return bmi;
     }

@@ -34,11 +34,12 @@
 
                 <div class="form-floating mb-3">
 
-                    <input type="number" name="kalorie" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="number" name="kalorie" class="form-control" min="0" max="100000" id="floatingInput" placeholder="Wpisz liczbę kalori">
                     <label for="floatingInput">Wpisz liczbę kalorii</label>
 
                 </div>
-                <button class="w-100 btn btn-lg btn-primary" type="submit">Przelicz ! </button> </form>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Przelicz ! </button>
+            </form>
         </div>
     </div>
 </div>
