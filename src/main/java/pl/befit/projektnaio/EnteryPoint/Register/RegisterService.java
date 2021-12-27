@@ -39,9 +39,9 @@ public class RegisterService {
         {
             request.setAttribute("error","Maksymalna długość hasła to 25 znaków , spróbuj zarejestrować się ponownie");
             return false;
-        } if(Period.between(user.getBirdhDate(), LocalDate.now().minusYears(13)).isNegative())
+        } if(Period.between(user.getBirdhDate(), LocalDate.now().minusYears(13)).isNegative()||!Period.between(user.getBirdhDate(),LocalDate.now().minusYears(120)).isNegative())
         {
-            request.setAttribute("error","Niestety, nie możesz się zarejestrować mając mniej niż 13 lat . Jeśli źle wprowadziłeś dane spróbuj ponownie");
+            request.setAttribute("error","Niestety, nie możesz się zarejestrować mając mniej niż 13 lat lub źle wprowadziłeś datę . Jeśli źle wprowadziłeś dane spróbuj ponownie");
             return false;
         } else  if(user.getPhoneNumber().length()!=9)
         {

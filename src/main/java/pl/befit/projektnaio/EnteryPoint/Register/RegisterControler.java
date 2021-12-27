@@ -23,9 +23,9 @@ public class RegisterControler extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("dopost");
+//        System.out.println("dopost");
         RegisterDTO  dto=RegisterDTO.RegisterDTO(request);
-        System.out.println(dto);
+//        System.out.println(dto);
         User user=new User(dto);
         if(request.getServletContext().getAttribute("users")!=null)
         {
