@@ -14,11 +14,10 @@
 <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item"><a href="${pageContext.request.contextPath}/" class="nav-link px-2 text-muted">Strona główna</a></li>
+        <li class="nav-item"><a href="${pageContext.request.contextPath}/sprawdzKalorycznoscPosilkow" class="nav-link px-2 text-muted">Kaloryczność posiłków</a></li>
         <li class="nav-item"><a href="${pageContext.request.contextPath}/silownie" class="nav-link px-2 text-muted">Lista siłowni</a></li>
         <li class="nav-item"><a href="${pageContext.request.contextPath}/kalkulatorBMI" class="nav-link px-2 text-muted">Zapotrzebowanie energetyczne</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Kaloryczność posiłków</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Często zadawane pytania</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">O nas</a></li>
+        <li class="nav-item"><a href="${pageContext.request.contextPath}/kalkulatorAktywnosci" class="nav-link px-2 text-muted">Przelicz kalorie na aktywność</a></li>
     </ul>
     <p class="text-center text-muted">&copy; 2021 Be Fit</p>
 </footer>

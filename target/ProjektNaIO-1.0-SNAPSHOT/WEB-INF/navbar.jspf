@@ -9,12 +9,11 @@
                 <li>
                     <a href="${pageContext.request.contextPath}/"><img src="logo.png" alt="logo"></a>
                 </li>
+                <li><a href="${pageContext.request.contextPath}/sprawdzKalorycznoscPosilkow">Sprawdź kaloryczność posiłków</a></li>
                 <li><a href="${pageContext.request.contextPath}/silownie">Lista siłowni</a></li>
                 <li><a href="${pageContext.request.contextPath}/kalkulatorBMI">Sprawdź zapotrzebowanie</a></li>
-                <li><a href="#">Sprawdź kaloryczność posiłków</a></li>
                 <li><a href="${pageContext.request.contextPath}/kalkulatorAktywnosci">Przelicz kalorie na Aktywność</a></li>
-                <li><a href="#">Często zadawane pytania</a></li>
-                <li><a href="#">O nas</a></li>
+
             </ul>
         </aside>
     </div>
