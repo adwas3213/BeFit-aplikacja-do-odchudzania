@@ -10,10 +10,10 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>BeFit- twoja aplikacja do odchudzania</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -29,18 +29,18 @@
 <div class="container">
 
 
-    <!-- Carousel -->
+
     <div id="slider" class="carousel slide" data-bs-ride="carousel">
 
-        <!-- Indicators/dots -->
+
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
             <button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button>
             <button type="button" data-bs-target="#slider" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#slider" data-bs-slide-to="3"></button>
+
         </div>
 
-        <!-- The slideshow/carousel -->
+
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="https://image.freepik.com/free-photo/sportswoman-sportswear-training-gym_1157-30349.jpg" class="d-block" style="width:100%">
@@ -66,7 +66,7 @@
 
         </div>
 
-        <!-- Left and right controls/icons -->
+
         <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </button>
