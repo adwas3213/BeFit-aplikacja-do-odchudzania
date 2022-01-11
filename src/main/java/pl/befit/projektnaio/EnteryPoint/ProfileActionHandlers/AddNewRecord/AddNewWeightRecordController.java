@@ -19,7 +19,7 @@ public class AddNewWeightRecordController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user=  ProfileActionHandlersService.getLoggedUserFromApplicationContext(request);
 
-        if(user.getWeightRecords()==null)
+        if(user.getWeightRecords()==null||user.getWeightRecords().isEmpty())
         {
             user.setWeightRecords(new TreeSet<>());
             user.setCurrentIdOfWeightRecord(0);

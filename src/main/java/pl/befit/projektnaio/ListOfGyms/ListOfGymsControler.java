@@ -42,6 +42,6 @@ public class ListOfGymsControler extends HttpServlet {
 
 
 
-        response.sendRedirect("silownie");
+        response.sendRedirect("/BeFit/silownie");
     }
 }

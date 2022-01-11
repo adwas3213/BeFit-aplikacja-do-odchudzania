@@ -13,6 +13,11 @@ public class User {
     private String password;
     private String phoneNumber;
     private LocalDate birdhDate;
+    private TreeSet<WeightRecord> weightRecords;
+    private TreeSet<WeightRecord> predictedWeight;
+    private long currentIdOfWeightRecord=0;
+
+
 
     public long getCurrentIdOfWeightRecord() {
         return currentIdOfWeightRecord;
@@ -21,10 +26,6 @@ public class User {
     public void setCurrentIdOfWeightRecord(long currentIdOfWeightRecord) {
         this.currentIdOfWeightRecord = currentIdOfWeightRecord;
     }
-
-    private TreeSet<WeightRecord> weightRecords;
-    private TreeSet<WeightRecord> predictedWeight;
-    private long currentIdOfWeightRecord=5;
 
     public User(RegisterDTO dto)
     {

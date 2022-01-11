@@ -5,10 +5,16 @@
     <div class="navBar">
         <aside class="categories">
             <ul>
-                <!--Tutaj należy zmienić ścieżkę dostepu do naszej strony na odpowiednie serwlety-->
-                <li>
-                    <a href="${pageContext.request.contextPath}/"><img src="logo.png" alt="logo"></a>
-                </li>
+                <style>
+                    #mainPage:hover{
+                        opacity: 70%;
+                    }
+                </style>
+
+                <div id="mainPage" >
+                    <a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/staticContent/images/logo.jpg" style="width: 137px;height: 67px; " alt="logo"></a>
+                </div>
+
                 <li><a href="${pageContext.request.contextPath}/sprawdzKalorycznoscPosilkow">Sprawdź kaloryczność posiłków</a></li>
                 <li><a href="${pageContext.request.contextPath}/silownie">Lista siłowni</a></li>
                 <li><a href="${pageContext.request.contextPath}/kalkulatorBMI">Sprawdź zapotrzebowanie</a></li>
@@ -17,7 +23,7 @@
             </ul>
         </aside>
     </div>
-    <!--Tutaj należy zmienić ścieżkę dostepu do naszej strony na odpowiednie serwlety-->
+
 <c:choose>
     <c:when test="${sessionScope.isLogged==null}">
 

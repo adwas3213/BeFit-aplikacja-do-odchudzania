@@ -23,6 +23,7 @@
         .row>.card {
             width: 19.1rem;
         }
+
     </style>
 </head>
 
@@ -92,6 +93,7 @@
 </div>
 </c:if>
 <script>
+
     function checkIfPercentageSumUpToProductWeight() {
         let nutreins = parseFloat(document.forms["dataForm"]["nutreins"].value);
         let fat = parseFloat(document.forms["dataForm"]["fat"].value);
@@ -105,12 +107,21 @@
     }
 </script>
 <h2 class="pb-2 text-center border-bottom">Przykładowa kaloryczność składników :</h2>
-<div class="card" style="width: fit-content;">
+<style>
+    .card>img
+    {
+        width: auto;
+        height: 15rem;
+    }
+
+
+</style>
+<div class="card" style="width:fit-content;">
 
 
     <div class="row" style="width: fit-content;">
         <div class="card">
-            <img src="https://agro-market24.pl/uploads/photos/1225/sprzedam_ziemniaki-%C5%9Bwie%C5%BCe-ziemniaki-_agromarket_gie%C5%82da%20rolna-564636-1225.JPG" class="card-img-top" alt="potatos">
+            <img src="https://agro-market24.pl/uploads/photos/1225/sprzedam_ziemniaki-%C5%9Bwie%C5%BCe-ziemniaki-_agromarket_gie%C5%82da%20rolna-564636-1225.JPG"  class="card-img-top" alt="potatos">
             <div class="card-body">
                 <h5 class="card-title">Ziemniaki</h5>
                 <p class="card-text">Wartości odżywcze w 100 gramach</p>

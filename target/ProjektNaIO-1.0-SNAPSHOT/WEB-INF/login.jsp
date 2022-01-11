@@ -38,15 +38,15 @@
         <div class="form-group">
             <button type="submit" class="btn btn-block create-account">Zaloguj się </button>
         </div>
-</div>
-</form>
 
+</form>
+</div>
 </div>
 
 <jsp:include page="/WEB-INF/footer.jspf"/>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-<script src="assets/js/script.js"></script>
+
 
 </body>
 

@@ -299,7 +299,7 @@
                 ]
             },<c:if test="${requestScope.user.predictedWeight!=null}"> {
                 ///Dane do predykcji wagi
-                //Znaleziony BUG - jest
+                //Znaleziony BUG - jest 
                 data: [
                     <c:set var="numberOfWeightRecords" value="${requestScope.user.weightRecords.size()}">
 

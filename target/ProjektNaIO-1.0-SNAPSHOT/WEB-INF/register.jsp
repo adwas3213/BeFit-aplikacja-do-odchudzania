@@ -39,7 +39,7 @@
         </div>
         <div class="form-group">
             <div class="col">Email</div>
-            <input type="text" class="form-control item" name="email" id="email" placeholder="Email" required>
+            <input type="email" class="form-control item" name="email" id="email" placeholder="Email" required>
         </div>
         <div class="form-group">
             <div class="col">Hasło</div>

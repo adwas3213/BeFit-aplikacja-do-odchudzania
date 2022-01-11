@@ -14,8 +14,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<%--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>--%>
+<%--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>--%>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
 
 
 
-    <div id="slider" class="carousel slide" data-bs-ride="carousel">
+    <div id="slider" class="carousel slide" data-bs-ride="carousel" style="width: 100%;height: 100%;">
 
 
         <div class="carousel-indicators">
@@ -43,21 +43,23 @@
 
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://image.freepik.com/free-photo/sportswoman-sportswear-training-gym_1157-30349.jpg" class="d-block" style="width:100%">
+                <img src="https://image.freepik.com/free-photo/sportswoman-sportswear-training-gym_1157-30349.jpg" class="d-block" style="height: 100%;width: 100%" >
                 <div class="carousel-caption">
                     <h3>Odkryj co sprawia ci przyjemność i gdzie chcesz wracać </h3>
                     <p>Nowe miejca dają nowe możliwości - warto poznać je wszystkie wraz z naszą aplikacją </p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsbgi-pdx.com%2Fwp-content%2Fuploads%2F2019%2F01%2FSelf-Defense-vs-Krav-Maga-Portland.jpg&f=1&nofb=1" class="d-block" style="width:100%">
+
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsbgi-pdx.com%2Fwp-content%2Fuploads%2F2019%2F01%2FSelf-Defense-vs-Krav-Maga-Portland.jpg&f=1&nofb=1" style="height: 100%;width: 100%" class="d-block" >
+
                 <div class="carousel-caption">
                     <h3>Obroń się oraz wyjdź poza strefę komfortu by zrealizować marzenia !</h3>
                     <p>Bądź gotów fizycznie by móc się obronić w chwili zagrożenia życia . Znaj oraz poszerzaj swoje granice stając się ciągle lepszym ! </p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://fitnessinterests.com/wp-content/uploads/2017/10/jogging_fitness_tips_by_gripped_fiteness_audio_wireless_gym_headphones_3.jpg" class="d-block" style="width:100%">
+                <img src="https://fitnessinterests.com/wp-content/uploads/2017/10/jogging_fitness_tips_by_gripped_fiteness_audio_wireless_gym_headphones_3.jpg" style="height: 100%;width: 100%" class="d-block" >
                 <div class="carousel-caption">
                     <h3>Znajdź innych którzy współdzielą z tobą twoją pasję</h3>
                     <p>Każdy potrzebuje kogoś bliskiego - znajomego , przyjaciela , drugą połówkę którzy są szczęśliwi gdy współdzielą własne pasje. Zaproś swoich bliskich do naszej aplikacji i wspólnie osiągajcie cele! </p>
