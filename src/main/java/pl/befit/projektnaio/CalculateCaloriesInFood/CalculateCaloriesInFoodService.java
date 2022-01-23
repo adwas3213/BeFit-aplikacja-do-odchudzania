@@ -16,22 +16,21 @@ public class CalculateCaloriesInFoodService {
         percentageOfNutreins=Math.round(percentageOfNutreins);
         percentageOfFat=Math.round(percentageOfFat);
 
-        sum*=1000;
-        sum=Math.round(sum);
-        sum/=1000;
+        sum = round4Numbers(sum, 1000);
 
-        caloriesInFatInThatPeaceOfFood*=100;
-        caloriesInFatInThatPeaceOfFood=Math.round(caloriesInFatInThatPeaceOfFood);
-        caloriesInFatInThatPeaceOfFood/=100;
+        caloriesInFatInThatPeaceOfFood = round4Numbers(caloriesInFatInThatPeaceOfFood, 100);
 
-        caloriesInCarbohydratesInThatPeaceOfFood*=100;
-        caloriesInCarbohydratesInThatPeaceOfFood=Math.round(caloriesInCarbohydratesInThatPeaceOfFood);
-        caloriesInCarbohydratesInThatPeaceOfFood/=100;
+        caloriesInCarbohydratesInThatPeaceOfFood = round4Numbers(caloriesInCarbohydratesInThatPeaceOfFood, 100);
 
-        caloriesInNutreinsInThatPeaceOfFood*=100;
-        caloriesInNutreinsInThatPeaceOfFood=Math.round(caloriesInNutreinsInThatPeaceOfFood);
-        caloriesInNutreinsInThatPeaceOfFood/=100;
+        caloriesInNutreinsInThatPeaceOfFood = round4Numbers(caloriesInNutreinsInThatPeaceOfFood, 100);
 
         return new Dish(percentageOfFat,percentageOfCarbohydrates,percentageOfNutreins,caloriesInFatInThatPeaceOfFood,caloriesInCarbohydratesInThatPeaceOfFood,caloriesInNutreinsInThatPeaceOfFood,sum,dto.getNameOfProduct(),dto.getGramsOfFood());
+    }
+
+    private static double round4Numbers(double sum, int i) {
+        sum *= i;
+        sum = Math.round(sum);
+        sum /= i;
+        return sum;
     }
 }

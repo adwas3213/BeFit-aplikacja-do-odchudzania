@@ -30,4 +30,19 @@ public class Activities {
     public Map<String, ActivitiesRepository> getActivities() {
         return activities;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Activities)) return false;
+
+        Activities that = (Activities) o;
+
+        return activities.equals(that.activities);
+    }
+
+    @Override
+    public int hashCode() {
+        return activities.hashCode();
+    }
 }

@@ -16,7 +16,7 @@ import java.util.TreeSet;
 public class CreateNewPredictionController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("do post ! ");
+
         User user=  ProfileActionHandlersService.getLoggedUserFromApplicationContext(request);
        double startWeight= Double.parseDouble( request.getParameter("startWeight"));
         System.out.println(request.getParameter("startWeight"));

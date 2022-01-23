@@ -5,6 +5,7 @@ import java.util.Optional;
 import static java.lang.Math.round;
 
 public class CaloryDemandService {
+
     public static BMIDTO calculateBMI(CaloryDemandDTO caloryDemandDTO)//caloryDemandDTO nie będzie NULL -> zabezpieczone we frontendzie
     {
         double height= caloryDemandDTO.getHeight()/100;

@@ -10,6 +10,7 @@ public class CaloryDemandDTO {
     private Gender gender;
     private double age;
 
+
     public CaloryDemandDTO(HttpServletRequest request) {
 
        weight= Double.parseDouble(request.getParameter("weight"));
@@ -20,6 +21,14 @@ public class CaloryDemandDTO {
     }
 
     public CaloryDemandDTO() {
+    }
+@Deprecated
+    public CaloryDemandDTO(ActivityLevel activityLevel, double height, double weight, Gender gender, double age) {
+        this.activityLevel = activityLevel;
+        this.height = height;
+        this.weight = weight;
+        this.gender = gender;
+        this.age = age;
     }
 
     public ActivityLevel getActivityLevel() {
