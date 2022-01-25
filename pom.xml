@@ -77,9 +77,43 @@
 
     <build>
         <plugins>
+                    <!-- copy configurations for Heroku Tomcat -->
+                    <plugin>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>copy-conf</id>
+                                <phase>install</phase>
+                                <configuration>
+                                    <tasks>
+                                        <copy todir="${project.build.directory}/../tomcat/conf">
+                                            <fileset dir="deploy/conf" />
+                                        </copy>
+                                    </tasks>
+                                </configuration>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                            </execution>
+                            <execution>
+                                <id>copy-project</id>
+                                <phase>install</phase>
+                                <configuration>
+                                    <tasks>
+                                        <copy todir="${project.build.directory}/../tomcat/webapps/ROOT">
+                                            <fileset dir="target/${project.build.finalName}" />
+                                        </copy>
+                                    </tasks>
+                                </configuration>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
 
 
-                <plugin>
+            <plugin>
                     <groupId>com.heroku.sdk</groupId>
                     <artifactId>heroku-maven-plugin</artifactId>
                     <version>3.0.3</version>
